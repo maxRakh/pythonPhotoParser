@@ -1,11 +1,12 @@
 import os
+import datetime
+
 import requests
 from bs4 import BeautifulSoup
 import lxml
 from urllib.request import urlopen
 from io import BytesIO
 from PIL import Image
-import datetime
 
 
 def get_image_url(product_url: str, headers: dict) -> list:
